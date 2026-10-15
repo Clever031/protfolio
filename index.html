@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>วัชรศักดิ์ สุขทองสา | Portfolio สำหรับสมัครฝึกงาน</title>
+  <meta name="description"
+    content="พอร์ตโฟลิโอสำหรับยื่นสมัครฝึกงาน ตำแหน่ง Software Developer / Frontend / Backend Intern ของ วัชรศักดิ์ สุขทองสา">
+  <meta name="keywords"
+    content="วัชรศักดิ์ สุขทองสา, Portfolio, ฝึกงาน, นักศึกษาฝึกงาน, Internship, Software Engineer Intern, Web Developer, Thailand">
+  <meta property="og:title" content="วัชรศักดิ์ สุขทองสา - Portfolio สมัครฝึกงาน">
+  <meta property="og:description" content="แฟ้มสะสมผลงานและโปรเจกต์สำหรับยื่นสมัครฝึกงานด้านการพัฒนาซอฟต์แวร์">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Prompt for Thai -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Prompt:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Animated Background Glows -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-orb-1"></div>
+    <div class="ambient-orb-2"></div>
+    <div class="ambient-orb-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" id="brandLogo">
+        <div class="brand-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+        <span>WATCHARASAK.<span class="gradient-text">DEV</span></span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active" id="navHero">หน้าแรก</a></li>
+        <li><a href="#about" class="nav-link" id="navAbout">เกี่ยวกับฉัน</a></li>
+        <li><a href="#skills" class="nav-link" id="navSkills">ทักษะ</a></li>
+        <li><a href="#projects" class="nav-link" id="navProjects">ผลงาน/โครงงาน</a></li>
+        <li><a href="#education" class="nav-link" id="navEducation">ประวัติการศึกษา</a></li>
+        <li><a href="#contact" class="nav-link" id="navContact">ติดต่อ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="status-badge" id="statusBadge">
+          <span class="status-pulse"></span>
+          <span>กำลังมองหาโอกาสฝึกงาน (Actively Seeking Internship)</span>
+        </div>
+
+        <h1 class="hero-title">
+          สวัสดีครับ, ผม <span class="gradient-text">วัชรศักดิ์ สุขทองสา</span><br>
+
+        </h1>
+
+        <p class="hero-description">
+          นักศึกษาชั้นปีที่ 4 สาขาเทคโนโลยีสารสนเทศและการสื่อสาร
+          มีความสนใจด้าน fullstack ux/uiDesign
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="heroViewProjectsBtn">
+            <span>ดูโปรเจกต์ที่เคยทำ</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="heroContactBtn">
+            <span>ติดต่อฉัน</span>
+          </a>
+          <button class="btn btn-secondary" id="copyEmailBtn" data-email="watcharasak.suk@spumail.net">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>คัดลอกอีเมล</span>
+          </button>
+        </div>
+
+
+      </div>
+
+      <!-- Hero Visual Graphic / 3D Card -->
+      <div class="hero-visual">
+        <div class="hero-card-wrapper">
+          <div class="hero-card-glow"></div>
+
+          <!-- Floating badge 1 -->
+          <div class="floating-badge badge-top-left">
+            <div class="badge-icon badge-react">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-subtle);">ระยะเวลาฝึกงาน</div>
+              <div>ตามกำหนดของหลักสูตร / สหกิจศึกษา</div>
+            </div>
+          </div>
+
+          <!-- Floating badge 2 -->
+          <div class="floating-badge badge-bottom-right">
+            <div class="badge-icon badge-code">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--text-subtle);">เป้าหมายการฝึกงาน</div>
+              <div>Full-Stack & UX/UI ในระบบจริง</div>
+            </div>
+          </div>
+
+          <!-- Main Visual Card -->
+          <div class="hero-card">
+            <div class="avatar-container">
+              <div class="profile-photo-wrapper">
+                <div class="profile-photo-ring"></div>
+                <div class="profile-photo-glow"></div>
+                <img
+                  src="profile.jpg"
+                  alt="วัชรศักดิ์ สุขทองสา"
+                  class="profile-photo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section (Bento Grid) -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">ข้อมูลส่วนตัวและ <span class="gradient-text">เป้าหมายการฝึกงาน</span></h2>
+        <p class="section-desc">ความมุ่งมั่น แรงบันดาลใจ และสิ่งที่ผมตั้งใจจะเรียนรู้จากการฝึกงานในองค์กรจริง</p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Story Card (Col 2) -->
+        <div class="bento-card bento-col-2">
+          <div class="bento-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <h3 class="bento-title">นักศึกษาไฟแรงที่พร้อมเปิดรับทุกคำแนะนำ</h3>
+          <p class="bento-desc">
+            ตลอดระยะเวลาในรั้วมหาวิทยาลัย ผมไม่ได้เรียนรู้เฉพาะทฤษฎีในห้องเรียน
+            แต่ลงมือทำโปรเจกต์จริงนอกเวลาอย่างสม่ำเสมอ
+            การฝึกงานครั้งนี้เปรียบเสมือนก้าวสำคัญที่ผมอยากนำความรู้ด้านการเขียนโค้ดและกระบวนการคิดเชิงตรรกะมาประยุกต์ใช้กับโจทย์ธุรกิจจริง
+            พร้อมรับฟังคำแนะนำจากพี่ๆ ในทีม เพื่อพัฒนาตัวเองให้พร้อมสู่การเป็น Software Engineer มืออาชีพ
+          </p>
+          <div style="margin-top: 1.5rem; display: flex; gap: 0.8rem; flex-wrap: wrap;">
+            <span class="tech-icon-pill">นักศึกษาชั้นปีที่ 4 (ICT)</span>
+            <span class="tech-icon-pill">Full-Stack & UX/UI</span>
+            <span class="tech-icon-pill">พร้อมฝึกงานแบบ Onsite หรือ Hybrid</span>
+          </div>
+        </div>
+
+        <!-- Strengths / Soft Skills Card -->
+        <div class="bento-card">
+          <div class="bento-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3 class="bento-title">ทักษะสำคัญ (Key Strengths)</h3>
+          <ul class="values-list">
+            <li class="value-item">
+              <span class="value-icon">✓</span>
+              <span><strong>Full-Stack Mindset:</strong> เข้าใจภาพรวมทั้งหน้าบ้าน (Frontend), ระบบหลังบ้าน (API) และฐานข้อมูล</span>
+            </li>
+            <li class="value-item">
+              <span class="value-icon">✓</span>
+              <span><strong>UI/UX Sensibility:</strong> ออกแบบด้วย Figma ใส่ใจรายละเอียดความสวยงาม ความง่าย และ Usability</span>
+            </li>
+            <li class="value-item">
+              <span class="value-icon">✓</span>
+              <span><strong>Design to Code:</strong> แปลงแบบ Prototype ให้เป็นโค้ด Responsive ที่ตรงสเปกและลื่นไหล</span>
+            </li>
+            <li class="value-item">
+              <span class="value-icon">✓</span>
+              <span><strong>Fast Learner:</strong> เรียนรู้เทคโนโลยีและเครื่องมือใหม่ๆ ได้ไว พร้อมลงมือปฏิบัติจริง</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Internship Expectations Card (Col 3 / Full Width) -->
+        <div class="bento-card bento-col-3">
+          <div class="bento-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <circle cx="12" cy="12" r="6"></circle>
+              <circle cx="12" cy="12" r="2"></circle>
+            </svg>
+          </div>
+          <h3 class="bento-title">สิ่งที่อยากเรียนรู้จากการฝึกงาน (Internship Objectives)</h3>
+          <p class="bento-desc">
+            มุ่งเน้นการผสานระหว่าง <strong>Full-Stack Development</strong> และ <strong>UX/UI Design</strong> เพื่อสร้างดิจิทัลโปรดักต์ที่ทั้งสวยงามและมีประสิทธิภาพ:
+          </p>
+          <ul class="values-list" style="margin-top: 1rem;">
+            <li class="value-item">
+              <span class="value-icon">✓</span>
+              <span><strong>Full-Stack Architecture:</strong> เรียนรู้กระบวนการพัฒนา Web App แบบครบวงจร ตั้งแต่หน้าบ้าน (Frontend), การเชื่อมต่อ RESTful/GraphQL API, จนถึงการจัดการ Database ในระบบ Production จริง</span>
+            </li>
+            <li class="value-item">
+              <span class="value-icon">✓</span>
+              <span><strong>Design to Code (UX/UI):</strong> ศึกษาการนำ Design System จาก Figma มาพัฒนาเป็น UI ที่ใช้งานง่าย สวยงาม ลื่นไหล และคำนึงถึง User Experience กับ Responsive รองรับทุกหน้าจอ</span>
+            </li>
+            <li class="value-item">
+              <span class="value-icon">✓</span>
+              <span><strong>Professional Workflow:</strong> สัมผัสการทำงานจริงร่วมกับทีม เช่น กระบวนการ Agile/Scrum, การทำ Code Review, การเขียน Clean Code และการใช้ Git สำหรับทีมขนาดใหญ่</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Tech Stack Section -->
+  <section id="skills" style="background: rgba(17, 24, 39, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Skills</span>
+        <h2 class="section-title">ทักษะและ <span class="gradient-text">เครื่องมือที่พร้อมใช้งาน</span></h2>
+        <p class="section-desc">ทักษะที่ได้จากการเรียน การทำโครงงาน และการศึกษาค้นคว้าด้วยตนเอง</p>
+      </div>
+
+      <div class="skills-container">
+        <!-- Frontend Card -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="category-title">Frontend & Web UI</h3>
+          </div>
+          <div class="skills-pill-group">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">TypeScript Basics</span>
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Tailwind CSS</span>
+            <span class="skill-tag">Responsive Design</span>
+          </div>
+        </div>
+
+        <!-- Backend & Database Card -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="category-title">Backend & Database</h3>
+          </div>
+          <div class="skills-pill-group">
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python (OOP)</span>
+            <span class="skill-tag">PostgreSQL / MySQL</span>
+            <span class="skill-tag">MongoDB Basics</span>
+          </div>
+        </div>
+
+        <!-- Tools & Workflow Card -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <div class="category-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+                </path>
+              </svg>
+            </div>
+            <h3 class="category-title">Tools & Development</h3>
+          </div>
+          <div class="skills-pill-group">
+            <span class="skill-tag">Git & GitHub</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Postman (API Testing)</span>
+            <span class="skill-tag">Figma (UI Prototype)</span>
+            <span class="skill-tag">Docker Basics</span>
+            <span class="skill-tag">Vercel / Netlify Deploy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Student Projects</span>
+        <h2 class="section-title">โครงงานและผลงานที่ <span class="gradient-text">พัฒนาขึ้นจริง</span></h2>
+        <p class="section-desc">โปรเจกต์ที่ทำในรายวิชา โครงงานเดี่ยว และ Side Projects
+          ที่ได้ลงมือเขียนโค้ดและแก้ไขปัญหาจริง</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">ทั้งหมด (All)</button>
+        <button class="filter-btn" data-filter="fullstack">Full-Stack Projects</button>
+        <button class="filter-btn" data-filter="web">Web Applications</button>
+        <button class="filter-btn" data-filter="academic">Coursework / โครงงาน</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        <!-- Project 1: University Room Booking System -->
+        <article class="project-card" data-category="fullstack">
+          <div class="project-preview">
+            <span class="project-badge-top">Coursework Capstone</span>
+            <svg class="project-preview-svg" viewBox="0 0 600 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="350" fill="#0c1322" />
+              <!-- Mockup UI Header -->
+              <rect x="30" y="25" width="540" height="40" rx="8" fill="#1e293b" />
+              <circle cx="55" cy="45" r="5" fill="#f43f5e" />
+              <circle cx="72" cy="45" r="5" fill="#f59e0b" />
+              <circle cx="89" cy="45" r="5" fill="#10b981" />
+              <!-- Calendar / Room grid -->
+              <rect x="30" y="80" width="160" height="230" rx="10" fill="#111c33" />
+              <rect x="210" y="80" width="360" height="230" rx="10" fill="#111c33" />
+              <!-- Booking blocks -->
+              <rect x="230" y="105" width="320" height="40" rx="6" fill="#1e293b" stroke="#38bdf8" />
+              <rect x="230" y="160" width="200" height="40" rx="6" fill="#1e293b" stroke="#6366f1" />
+              <rect x="230" y="215" width="280" height="40" rx="6" fill="#1e293b" stroke="#10b981" />
+            </svg>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">ระบบจองห้องประชุมและอุปกรณ์ออนไลน์ (UniBook)</h3>
+            <p class="project-description">
+              โครงงานรายวิชา Software Engineering พัฒนาระบบจองห้องและยืมอุปกรณ์ของคณะ
+              มีระบบตรวจสอบช่วงเวลาชนกันแบบ Real-time, ระบบล็อกอินด้วยบัญชีนิสิต, และแดชบอร์ดจัดการคำขอสำหรับเจ้าหน้าที่
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">PostgreSQL</span>
+              <span class="project-tag">Tailwind</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="project-link-btn primary">
+                <span>ดูเว็บตัวอย่าง (Demo)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: E-Commerce Storefront -->
+        <article class="project-card" data-category="fullstack">
+          <div class="project-preview">
+            <span class="project-badge-top">Personal Project</span>
+            <svg class="project-preview-svg" viewBox="0 0 600 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="350" fill="#0b1329" />
+              <!-- Product Cards Preview -->
+              <rect x="50" y="50" width="140" height="240" rx="12" fill="#16223d" stroke="#25355a" />
+              <rect x="230" y="50" width="140" height="240" rx="12" fill="#16223d" stroke="#6366f1" stroke-width="2" />
+              <rect x="410" y="50" width="140" height="240" rx="12" fill="#16223d" stroke="#25355a" />
+              <circle cx="300" cy="120" r="40" fill="#818cf8" opacity="0.3" />
+              <rect x="250" y="180" width="100" height="12" rx="4" fill="#f8fafc" />
+              <rect x="250" y="200" width="60" height="10" rx="3" fill="#64748b" />
+              <rect x="250" y="235" width="100" height="28" rx="6" fill="#6366f1" />
+            </svg>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Mini E-Commerce & Cart System</h3>
+            <p class="project-description">
+              โปรเจกต์ศึกษาเพิ่มเติมด้วยตนเองเพื่อฝึกฝน State Management (Redux/Zustand)
+              มีระบบค้นหาและกรองสินค้าตามหมวดหมู่, จัดการตะกร้าสินค้า, และคำนวณยอดเงินพร้อมบันทึกลง LocalStorage
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">REST API</span>
+              <span class="project-tag">Tailwind CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="project-link-btn primary">
+                <span>ดูเว็บตัวอย่าง (Demo)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Task Management Kanban -->
+        <article class="project-card" data-category="web">
+          <div class="project-preview">
+            <span class="project-badge-top">Web Application</span>
+            <svg class="project-preview-svg" viewBox="0 0 600 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="350" fill="#0f172a" />
+              <!-- Kanban Columns -->
+              <rect x="40" y="40" width="155" height="270" rx="10" fill="#1e293b" />
+              <rect x="220" y="40" width="155" height="270" rx="10" fill="#1e293b" />
+              <rect x="400" y="40" width="155" height="270" rx="10" fill="#1e293b" />
+              <rect x="55" y="90" width="125" height="60" rx="6" fill="#334155" />
+              <rect x="235" y="90" width="125" height="70" rx="6" fill="#334155" stroke="#38bdf8" />
+              <rect x="235" y="175" width="125" height="50" rx="6" fill="#334155" />
+              <rect x="415" y="90" width="125" height="60" rx="6" fill="#334155" />
+            </svg>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Interactive Task Board (Kanban)</h3>
+            <p class="project-description">
+              เว็บแอปพลิเคชันสำหรับจัดระเบียบงานกลุ่มในมหาวิทยาลัย รองรับการลากวางการ์ดงาน (Drag & Drop),
+              การกำหนดสถานะ To-Do, In Progress, Done พร้อมระบบบันทึกข้อมูลการทำงาน
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">JavaScript (ES6+)</span>
+              <span class="project-tag">HTML5 Drag & Drop</span>
+              <span class="project-tag">CSS Grid</span>
+              <span class="project-tag">Node.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="project-link-btn primary">
+                <span>ดูเว็บตัวอย่าง (Demo)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4: Coursework Data Visualization -->
+        <article class="project-card" data-category="academic">
+          <div class="project-preview">
+            <span class="project-badge-top">Data & Analytics</span>
+            <svg class="project-preview-svg" viewBox="0 0 600 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="600" height="350" fill="#0d1424" />
+              <circle cx="100" cy="120" r="45" fill="#06B6D4" />
+              <circle cx="200" cy="120" r="45" fill="#6366F1" />
+              <circle cx="300" cy="120" r="45" fill="#A855F7" />
+              <circle cx="400" cy="120" r="45" fill="#10B981" />
+              <circle cx="500" cy="120" r="45" fill="#F43F5E" />
+              <rect x="80" y="210" width="200" height="45" rx="10" fill="#6366F1" />
+              <rect x="310" y="210" width="200" height="45" rx="10" fill="#1e293b" stroke="#38bdf8" />
+            </svg>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">โครงงานวิเคราะห์สถิติมลพิษและสภาพอากาศ (AirPollution Tracker)</h3>
+            <p class="project-description">
+              โครงงานรายวิชา Database Systems ดึงข้อมูลค่าฝุ่น PM2.5 จาก Open API มาประมวลผล
+              และแสดงผลกราฟแนวโน้มผ่าน Web Dashboard พร้อมระบบแจ้งเตือนเมื่อค่าเกินเกณฑ์มาตรฐาน
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Open API</span>
+              <span class="project-tag">SQL</span>
+              <span class="project-tag">Chart.js</span>
+            </div>
+            <div class="project-links">
+              <a href="#contact" class="project-link-btn primary">
+                <span>ดูรายละเอียดโครงงาน</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Activities Timeline Section -->
+  <section id="education" style="background: rgba(17, 24, 39, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Education</span>
+        <h2 class="section-title">ประวัติการศึกษา <span class="gradient-text">(Education)</span></h2>
+        <p class="section-desc">เส้นทางการศึกษาจากสายวิชาชีพสู่ระดับปริญญาตรี มุ่งเน้นการลงมือปฏิบัติจริง</p>
+      </div>
+
+      <div class="timeline">
+        <!-- Item 1: University -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">ระดับปริญญาตรี สาขาเทคโนโลยีสารสนเทศและการสื่อสาร</h3>
+                <span class="timeline-company">มหาวิทยาลัยศรีปทุม (Sripatum University)</span>
+              </div>
+              <span class="timeline-period">ปัจจุบัน (ชั้นปีที่ 4)</span>
+            </div>
+            <p class="timeline-desc">
+              กำลังศึกษาอยู่ชั้นปีที่ 4 มุ่งเน้นการพัฒนา Full-Stack Web Development, การออกแบบ UX/UI Design, 
+              การเชื่อมต่อ API และการจัดการฐานข้อมูลเพื่อตอบโจทย์การใช้งานจริง
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2: High Vocational Certificate -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">ระดับประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</h3>
+                <span class="timeline-company">วิทยาลัยเทคนิคเลย</span>
+              </div>
+              <span class="timeline-period">สำเร็จการศึกษา</span>
+            </div>
+            <p class="timeline-desc">
+              ศึกษาพื้นฐานด้านคอมพิวเตอร์ เครือข่าย (Networking) ฮาร์ดแวร์ และการเขียนโปรแกรมประยุกต์เชิงปฏิบัติการ
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3: Vocational Certificate -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">ระดับประกาศนียบัตรวิชาชีพ (ปวช.)</h3>
+                <span class="timeline-company">วิทยาลัยเทคนิคเลย</span>
+              </div>
+              <span class="timeline-period">สำเร็จการศึกษา</span>
+            </div>
+            <p class="timeline-desc">
+              จุดเริ่มต้นการศึกษาสายวิชาชีพด้านคอมพิวเตอร์และเทคโนโลยีสารสนเทศ ปูพื้นฐานตรรกะและการลงมือปฏิบัติจริง
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">ช่องทางการ <span class="gradient-text">ติดต่อ</span></h2>
+        <p class="section-desc">สนใจร่วมงาน มีโปรเจกต์ใหม่ หรือต้องการสอบถามข้อมูลเพิ่มเติม
+          สามารถส่งข้อความหรือติดต่อผ่านช่องทางด้านล่างได้ตลอดเวลาครับ</p>
+      </div>
+
+      <div class="contact-single-wrapper">
+        <!-- Contact Info Card -->
+        <div class="contact-info-card">
+          <h3 class="contact-info-title">ข้อมูลติดต่อ</h3>
+          <p class="contact-info-desc">
+            พร้อมส่งเอกสาร Resume, Transcript และหนังสือขอความอนุเคราะห์ฝึกงานจากทางมหาวิทยาลัยได้ทันทีครับ
+          </p>
+
+          <div class="contact-methods">
+            <div class="contact-method-item">
+              <div class="method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="method-label">อีเมลติดต่อ</div>
+                <a href="mailto:watcharasak.suk@spumail.net" class="method-val">watcharasak.suk@spumail.net</a>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <div class="method-label">เบอร์โทรศัพท์</div>
+                <a href="tel:0955457253" class="method-val">095-545-7253</a>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <div class="method-label">พื้นที่สะดวกฝึกงาน</div>
+                <div class="method-val">กรุงเทพฯ และปริมณฑล หรือ Remote / Hybrid</div>
+              </div>
+            </div>
+
+            <div class="contact-method-item">
+              <div class="method-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="method-label">ช่วงเวลาฝึกงาน</div>
+                <div class="method-val" style="color: var(--accent-emerald);">ตามกำหนดของมหาวิทยาลัย /
+                  ภาคเรียนสหกิจศึกษา</div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-text">
+        © <span id="currentYear">2026</span> <span class="footer-highlight">วัชรศักดิ์ สุขทองสา</span>. Personal
+        Internship Portfolio.
+      </div>
+      <a href="#hero" class="back-to-top">
+        <span>กลับขึ้นด้านบน</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <span id="toastText">การแจ้งเตือน</span>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>

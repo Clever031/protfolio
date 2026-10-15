@@ -1,0 +1,14 @@
+# Windows desktop artifacts
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS temporary files
+*.tmp
+*.temp
